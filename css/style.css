@@ -1,0 +1,191 @@
+/* HEADER */
+.header__content {
+}
+
+.header__content .header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__content .header__logo img {
+    width: 200px;
+}
+
+.header__content .header__menu li {
+    margin: 0 15px;    
+}
+
+.header__content .header__menu li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: all ease-in 0.3s;
+}
+
+.header__content .header__menu li a:hover {
+    color: #14854e;
+}
+
+.header__content .header__menu .header__whatsapp {
+    background-color: #48c957;
+    border-radius: 15px;
+    transition: all ease-in 0.3s;
+}
+
+.header__content .header__menu .header__whatsapp:hover {
+    background-color: #14854e;
+}
+
+.header__content .header__menu .header__whatsapp a {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header__content .header__menu .header__whatsapp img {
+    width: 15px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* SLIDE */
+.carousel-inner {
+    height: 506.98px;
+}
+
+.carousel__description {
+    position: absolute;
+    top: 30%;
+    left: 150px;
+    color: #FFFFFF;
+    max-width: 50%;
+}
+
+.carousel__description h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel__description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+}
+
+.carousel__whatsapp {
+    width: 150px;
+    background-color: #48c957;
+    border-radius: 15px;
+    transition: all ease-in 0.3s;
+    text-align: center;
+}
+
+.carousel__whatsapp:hover {
+    background-color: #14854e;
+    
+}
+
+.carousel__whatsapp a {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.carousel__whatsapp a:hover {
+    color: #FFFFFF;
+    text-decoration: none;    
+}
+
+.carousel__whatsapp img {
+    width: 15px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* US JOURNEY */
+.journey__content {
+    padding-top: 50px;
+}
+
+.journey__content .row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.journey__content .journey__img {
+    margin-right: 50px
+}
+
+.journey__content .journey__img img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.journey__content .journey__description {
+    max-width: 490px;
+}
+
+.journey__content .journey__description h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.journey__content .journey__description h2::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    margin-top: 8px;
+    background-color: #14854e;
+}
+
+.journey__content .journey__description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    margin-top: 20px;
+}
+
+/* US CLIENTS */
+
+.clients__content {
+    margin-top: 50px;
+}
+
+.clients__content .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.clients__content .clients__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.clients__content .clients__title::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    margin: 8px 428px;
+    background-color: #14854e;
+}
+
+.clients__content .clients__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients__content .clients__logos img {
+    max-width: 300px;
+    margin: 10px
+}
