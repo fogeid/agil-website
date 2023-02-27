@@ -60,7 +60,7 @@
             <div class="header__whatsapp p-2">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <p class="mb-0">Entrar em contato</p>
-                <img src="assets/whatsapp.png" alt="Icone Whatsapp" />
+                <img src="assets/whatsapp.png" alt="Whatsapp" />
               </a>
             </div>
           </nav>
@@ -69,7 +69,7 @@
     </header>
 
     <!-- SLIDE -->
-    <div
+    <section
       id="carouselExampleControls"
       class="carousel slide"
       data-ride="carousel"
@@ -108,32 +108,36 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- US JOURNEY -->
-    <div class="journey__content">
+    <section class="journey__content">
       <div class="container">
         <div class="row">
           <div class="journey__img">
             <img src="assets/slide-jornada.png" alt="Nossa Jornada">
           </div>
           <div class="journey__description">
-            <h2>A NOSSA JORNADA</h2>
+            <h2>
+              A NOSSA JORNADA
+            </h2>
             <p>
               Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio.Cevadis im ampola pa arma uma pindureta.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- US CLIENTS -->
-    <div class="clients__content">
+    <section class="clients__content">
       <div class="container">
         <div class="row">
-          <h2 class="clients__title">
-            NOSSOS CLIENTES
-          </h2>
+          <div class="clients__description">
+            <h2 class="clients__title">
+              NOSSOS CLIENTES
+            </h2>
+          </div>          
           <div class="clients__logos">
             <div>
               <img src="assets/clientes.png" alt="">
@@ -173,7 +177,150 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact__content">
+      <div class="container">
+        <div class="row">
+          <div class="contact__description">
+            <h2 class="contact__title">
+              FALE COM A ÁGIL
+            </h2>
+            <p>
+              Preencha o Formulário abaixo para uma solicitação de orçamento. Em breve entraremos em contato!
+            </p>
+          </div>
+          <form class="contact__form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="name" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Digite seu email">
+              <label for="telefone">Telefone</label>
+              <input type="telefone" class="form-control" id="telefoneInput" aria-describedby="telefoneHelp" placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea class="form-control" id="mensagemInput" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer__content">
+      <div class="container">
+        <div class="row">
+          <div class="footer__media">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="assets/logo_branca.png" alt="Logo Ágil">
+              </a>
+            </div>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/agilmeioambiente/" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/in/agilmeioambiente/" target="_blank">
+                <img src="assets/linkedin.png" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <h2>NAVEGAÇÃO</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  - Home
+                </a>               
+              </li>
+              <li>
+                <a href="#">
+                  - Sobre nós
+                </a>                 
+              </li>
+              <li>
+                <a href="#">
+                  - Serviços
+                </a>                
+              </li>
+              <li>
+                <a href="#">
+                  - Parceiros
+                </a>                
+              </li>
+              <li>
+                <a href="#">
+                  - Contato
+                </a>                
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contact">
+            <h2>CONTATOS</h2>
+            <div class="footer__data">
+              <div class="footer__item">
+                <a href="" target="_blank">
+                  <img src="assets/whatsapp.png" alt="Whatsapp">
+                  <p>
+                    (65) 99548-5485
+                  </p>
+                </a>                
+              </div>
+              <div class="footer__item">
+                <a href="" target="_blank">
+                  <img src="assets/telefone.png" alt="Telefone">
+                  <p>
+                    (65) 99548-5485
+                  </p>
+                </a>                
+              </div>
+              <div class="footer__item">
+                <a href="" target="_blank">
+                  <img src="assets/instagram.png" alt="Instagram">
+                  <p>
+                    @agilmeioambiente
+                  </p>
+                </a>                
+              </div>
+              <div class="footer__item">
+                <a href="" target="_blank">
+                  <img src="assets/email.png" alt="Email">
+                  <p>
+                    contato@agilmeioambiente.com.br
+                  </p>
+                </a>                
+              </div>
+              <div class="footer__item">
+                <a href="" target="_blank">
+                  <img src="assets/localizacao.png" alt="Localização">
+                  <p>
+                    Rua Palmerin, 106 (Vila Soave) Prazeres,<br> Jaboatão dos Guararapes - PE
+                  </p>
+                </a>                
+              </div>
+            </div>
+          </div>
+          <div class="footer__map">
+            <h2>ONDE NOS ENCONTRAR</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15370.589023906952!2d-56.074459770402655!3d-15.610484375800388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db02b8025a3f7%3A0x48f8c6dd75b33c47!2sUFMT%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1677512987127!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright__1">
+          © COPYRIGHT 2023 Ágil Meio Ambiente e Saneamento - TODOS OS DIREITOS RESERVADOS
+        </p>
+        <p class="footer__copyright__2">
+          Development by <a href="https://github.com/fogeid" target="_blank">Diego Batista</a>
+        </p>
+      </div>
+    </footer>
   </body>
 
   <!-- SCRIPTS -->
