@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 .header__content .header__menu {
     display: flex;
@@ -149,7 +153,69 @@
     margin-top: 20px;
 }
 
-/* US CLIENTS */
+/* OUR SERVICES */
+.services__content {
+    padding: 50px 0px;
+    background-color: #F7F9FB;
+}
+
+.services__content .services__description__h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.services__content .services__description__h2 .services__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.services__content .services__title::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    margin: 8px 0;
+    background-color: #14854e;
+}
+
+.services__content .services__box {
+    display: flex;
+    flex-direction: row;
+}
+
+.services__content .services__box .services__img img {
+   max-width: 650px;
+}
+
+.services__content .services__box .services__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.services__content .services__box .services__description h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services__content .services__box .services__description p {
+    font-size: 0.85rem;
+}
+
+.services__content .services__box .services__description ul {
+    list-style: outside;
+    padding: 0 20px;
+}
+
+.services__content .services__box .services__description ul p {
+    font-weight: bold;
+}
+
+/* OUR CLIENTS */
 
 .clients__content {
     padding: 50px 0px;
@@ -165,7 +231,6 @@
     justify-content: center;
     text-align: center;
 }
-
 
 .clients__content .clients__description .clients__title {
     font-family: 'Open Sans', sans-serif;
@@ -261,10 +326,6 @@
     text-decoration: none;
 }
 
-.footer__content .footer__nav {
-
-}
-
 .footer__content .footer__nav h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -330,3 +391,8 @@
 }
 
 /* MOBILE */
+@media (min-width: 1200px) {
+    .services__content .container {
+        max-width: 1300px;
+    }
+}
