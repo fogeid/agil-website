@@ -462,6 +462,10 @@ html {
 
 /* MOBILE */
 @media (min-width: 1200px) {
+    .journey__content .row {
+        justify-content: space-between !important;
+    }
+
     .services__content .container {
         max-width: 1300px;
     }
