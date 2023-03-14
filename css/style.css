@@ -466,6 +466,10 @@ html {
         justify-content: space-between !important;
     }
 
+    .journey__content .journey__description {
+        margin-top: 0px !important;
+    }
+
     .services__content .container {
         max-width: 1300px;
     }
