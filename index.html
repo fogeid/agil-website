@@ -22,7 +22,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
     <title>Agil - Meio Ambiente e Saneamento</title>
   </head>
   <body>
@@ -180,7 +180,7 @@
     </section>
 
     <!-- OUR SERVICES -->
-    <section class="services__content" id="services">
+    <section class="services__content">
       <div class="container">
         <div class="row">
           <div class="services__description__h2">
@@ -336,7 +336,7 @@
     </section>
 
     <!-- OUR SERVICES MOBILE -->
-    <section class="services__content__mobile" id="services">
+    <section class="services__content__mobile">
       <div class="container">
         <div class="row">
           <div class="services__description__h2">
@@ -550,7 +550,12 @@
               breve entraremos em contato!
             </p>
           </div>
-          <form class="contact__form" id="my-form" action="https://formspree.io/f/xpzelbbz" method="POST">
+          <form
+            class="contact__form"
+            id="my-form"
+            action="https://formspree.io/f/xpzelbbz"
+            method="POST"
+          >
             <div class="form-group">
               <label for="name">Nome</label>
               <input
@@ -590,7 +595,9 @@
                 rows="3"
               ></textarea>
             </div>
-            <button id="my-form-button" type="submit" class="btn btn-success">Enviar</button>
+            <button id="my-form-button" type="submit" class="btn btn-success">
+              Enviar
+            </button>
             <p id="my-form-status" class="pt-3"></p>
           </form>
         </div>
@@ -744,7 +751,7 @@
   <!-- SCRIPTS -->
   <script>
     var form = document.getElementById("my-form");
-    
+
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("my-form-status");
@@ -753,27 +760,50 @@
         method: form.method,
         body: data,
         headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Obrigado, em breve entraremos em contato!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Ops! Ocorreu um problema ao enviar seu formulário"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Ops! Ocorreu um problema ao enviar seu formulário"
-      });
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            status.innerHTML = "Obrigado, em breve entraremos em contato!";
+            form.reset();
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, "errors")) {
+                status.innerHTML = data["errors"]
+                  .map((error) => error["message"])
+                  .join(", ");
+              } else {
+                status.innerHTML =
+                  "Ops! Ocorreu um problema ao enviar seu formulário";
+              }
+            });
+          }
+        })
+        .catch((error) => {
+          status.innerHTML =
+            "Ops! Ocorreu um problema ao enviar seu formulário";
+        });
     }
-    form.addEventListener("submit", handleSubmit)
-</script>
+    form.addEventListener("submit", handleSubmit);
+
+    var $btnDesktop = document.querySelector(".services__content");
+    var $btnMobile = document.querySelector(".services__content__mobile");
+
+    function verificarMobile() {
+      var userAgent = navigator.userAgent;
+      userAgent = userAgent.toLowerCase();
+      var isSamsungBrowser = userAgent.indexOf("samsungbrowser") != -1;
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || isSamsungBrowser) {
+        $btnMobile.setAttribute("id", "services");
+      } else {
+        $btnDesktop.setAttribute("id", "services");
+      }
+    }
+
+    verificarMobile();
+  </script>
 
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
