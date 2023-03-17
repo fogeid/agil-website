@@ -778,6 +778,7 @@ html p {
   .footer__content .footer__copyright {
     flex-direction: column;
     text-align: center;
+    padding: 0 10px;
   }
 
   .footer__content .footer__copyright .footer__copyright__2 {
@@ -915,6 +916,7 @@ html p {
   .footer__content .footer__copyright {
     flex-direction: column;
     text-align: center;
+    padding: 0 10px;
   }
 
   .footer__content .footer__copyright .footer__copyright__2 {
